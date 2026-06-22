@@ -1,6 +1,6 @@
 # moderngl-docs-mcp
 
-A hybrid (FTS5 keyword + vector semantic) MCP search server for [ModernGL](https://github.com/moderngl/moderngl) documentation. Combines SQLite FTS5 and `sqlite-vec` k-NN search, fused via Reciprocal Rank Fusion, behind a single `search_docs` MCP tool.
+A hybrid (FTS5 keyword + vector semantic) MCP search server for [ModernGL](https://github.com/moderngl/moderngl) documentation (legaly take from context7 👀 , pls don't sue me). Combines SQLite FTS5 and `sqlite-vec` k-NN search, fused via Reciprocal Rank Fusion, behind a single `search_docs` MCP tool.
 
 ## Why hybrid search
 
