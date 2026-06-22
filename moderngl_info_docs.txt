@@ -1,0 +1,2861 @@
+### The Guide > An introduction to OpenGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/index.md
+
+Explore the fundamentals of OpenGL and understand how ModernGL simplifies and enhances the graphics rendering process.
+
+--------------------------------
+
+### The Guide
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/index.md
+
+This guide provides a comprehensive learning path for ModernGL, covering its core concepts and functionalities.
+
+--------------------------------
+
+### The Guide
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+The Guide provides a comprehensive walkthrough of ModernGL, starting with an introduction to OpenGL, followed by getting started with ModernGL, and exploring functionality expansion.
+
+--------------------------------
+
+### Low start
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/index.md
+
+Key topics covered in the low start guide include creating a context, understanding ModernGL types, and an introduction to shaders, including vertex shaders for transformations.
+
+--------------------------------
+
+### Getting Started
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/index.md
+
+This guide provides a comprehensive introduction to ModernGL, requiring no prior OpenGL experience, only a basic understanding of its operational principles.
+
+--------------------------------
+
+### Indices and tables
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+This page provides indices and tables for navigating the documentation, including a general index, module index, and a search page.
+
+--------------------------------
+
+### Triangles drawing > Uniform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/index.md
+
+Understand the concept of uniforms in graphics.
+
+--------------------------------
+
+### Low start
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/index.md
+
+This section provides a low-start guide to learning ModernGL. It covers all ModernGL objects with a glance and introduces the first use of the GPU.
+
+--------------------------------
+
+### The Guide > Functionality expansion
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/index.md
+
+Discover how to expand the capabilities of your ModernGL applications, including rendering directly to a window.
+
+--------------------------------
+
+### Reference
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+The Reference section offers detailed documentation for various ModernGL components, including the main module, Context, Buffer, VertexArray, Program, Sampler, Textures (Texture, TextureArray, Texture3D, TextureCube), Framebuffer, Renderbuffer, Scope, Query, and ComputeShader.
+
+--------------------------------
+
+### Triangles drawing > One familiar triangle
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/index.md
+
+Explore the concept of a familiar triangle.
+
+--------------------------------
+
+### The Guide > Getting started with ModernGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/index.md
+
+Learn how to get started with ModernGL, from initial setup to performing your first rendering operations and drawing triangles.
+
+--------------------------------
+
+### First rendering
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/index.md
+
+This section will guide you through drawing a broken line, demonstrating dynamic rendering and expanding your understanding of core ModernGL objects like Program, Buffer, and Vertex Array.
+
+--------------------------------
+
+### Program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+A program is a collection of shader stages that are linked together to form a complete rendering pipeline. It is the fundamental object for rendering in moderngl.
+
+--------------------------------
+
+### An introduction to OpenGL > Beyond OpenGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/intro.md
+
+The Next Generation OpenGL Initiative (glNext) evolved into the Vulkan API, a ground-up redesign unifying OpenGL and OpenGL ES into a new, non-backward-compatible API. Learning Modern OpenGL concepts and shaders can aid in understanding Vulkan.
+
+--------------------------------
+
+### Context.enable()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `enable()` method enables specified flags. Similar to `enable_only()`, the flags are defined as bit flags that can be logically OR-ed together. Valid flags can be found in the documentation for `enable_only()`.
+
+--------------------------------
+
+### Techniques
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/techniques/index.md
+
+This section provides a guide on running modernGL in a headless environment on Ubuntu 18 Server, covering dependencies, context creation, and running examples.
+
+--------------------------------
+
+### One familiar triangle
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/one_familiar_triangle.md
+
+Drawing a triangle involves defining vertices with positions and colors. The graphics pipeline interpolates these colors across the triangle's surface, creating a smooth color transition. This interpolation is a fundamental aspect of how GPUs render shaded surfaces.
+
+--------------------------------
+
+### Context Creation > Introduction
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/context.md
+
+A context provides ModernGL with access to OpenGL instructions. The method of context creation varies by operating system and target platform. Typically, the default backend for your OS is automatically selected unless a specific 'backend' parameter is provided. Default backends include WGL on Windows, GLX on Linux, and CGL on OS X. These defaults support detecting existing contexts from window libraries or creating headless contexts.
+
+--------------------------------
+
+### An introduction to OpenGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/intro.md
+
+OpenGL, created in 1992 by Silicon Graphics and now managed by the Khronos Group, is a standard API for hardware-accelerated rendering across multiple platforms. Vendors implement the specifications to provide this functionality.
+
+--------------------------------
+
+### Moderngl Documentation > Context.query() — GPU Performance Counters
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Context.query() wraps OpenGL queries for GPU performance monitoring. It can track the number of fragments that passed the depth test (`samples`), total primitives generated (`primitives`), and GPU time elapsed in nanoseconds (`elapsed`).
+
+--------------------------------
+
+### Context Creation > Specifying context backend
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/context.md
+
+For advanced configurations, you can specify a context backend using the 'backend' parameter. For instance, to create a headless EGL context on Linux, use 'moderngl.create_context(standalone=True, backend='egl')'. Each backend may support additional keyword arguments for fine-tuning, detailed in the 'glcontext' documentation.
+
+--------------------------------
+
+### An introduction to OpenGL > The simplified story
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/intro.md
+
+The "Fixed Pipeline" (Old OpenGL) used functions like glVertex and glBegin/glEnd, with strong opinions and limitations. In contrast, the "Programmable Pipeline" (Modern OpenGL) uses functions like glCreateProgram and glUniform, working with data buffers and GPU-run programs called shaders written in GLSL, offering greater flexibility.
+
+--------------------------------
+
+### Moderngl Documentation > Context.compute_shader() — General-Purpose GPU Computing
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Compute shaders enable general-purpose GPU computing (GPGPU) tasks independent of the rasterization pipeline. Data is passed through storage buffers or image units. This feature requires OpenGL 4.3 or later.
+
+--------------------------------
+
+### An introduction to OpenGL > Where does ModernGL fit into all this?
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/intro.md
+
+ModernGL is a Pythonic wrapper for OpenGL 3.3 core or higher, exposing the Programmable Pipeline through objects like Buffer and Program. It simplifies OpenGL by hiding complex details and removing common pitfalls, focusing on shaders and the rendering pipeline.
+
+--------------------------------
+
+### Using GLSL in ModernGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+GLSL (OpenGL Shading Language) is essential for shader programming in ModernGL, enabling GPU execution for enhanced graphics rendering. Key concepts include standard data types (int, float, double, bool) and graphics-specific types like vectors (vec2-vec4) and matrices (mat2-mat4).
+
+--------------------------------
+
+### Moderngl Documentation
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Scopes in Moderngl provide a convenient way to manage rendering states, including framebuffers, pipeline states, textures, and buffers. They can be used as context managers for temporary state changes or assigned to VertexArrays to ensure specific states are active during rendering. Scopes can also be combined with queries for performance monitoring.
+
+--------------------------------
+
+### An introduction to OpenGL > The simplified story
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/intro.md
+
+OpenGL has evolved into "Modern OpenGL", with version 3.3 being the first to modernize the API, enabling utilization of Direct3D 11-class hardware. This version and subsequent 4.x versions are forward compatible. Running in "core mode" removes old features, while "compatibility mode" allows mixing old and new APIs.
+
+--------------------------------
+
+### Moderngl Documentation > Context.enable() / Context.enable_only() / Context.disable() — Pipeline State Flags
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Pipeline state flags like depth testing, face culling, and blending are controlled using `enable()`, `enable_only()`, and `disable()` methods. `enable_only()` atomically replaces all current flags, while `enable()` and `disable()` modify individual flags. Advanced configurations for blending and face culling are supported, along with direct enabling of OpenGL capabilities.
+
+--------------------------------
+
+### Techniques
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+Techniques section provides guidance on specific operational aspects, such as setting up headless rendering on Ubuntu 18 Server.
+
+--------------------------------
+
+### Topics
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+This section delves into various topics related to ModernGL, including the lifecycle of a ModernGL object, context creation, texture formats, and buffer formats.
+
+--------------------------------
+
+### Triangles drawing
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/index.md
+
+This section covers drawing the first triangles, moving closer to real rendering.
+
+--------------------------------
+
+### Query > Attributes > Query.ctx
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+Query.ctx: The context this object belongs to.
+
+--------------------------------
+
+### Query > Attributes > Query.extra
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+Query.extra: User defined data.
+
+--------------------------------
+
+### Scope
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/scope.md
+
+The Scope class has a `release()` method for cleanup. It also has attributes for the associated context (`ctx`) and user-defined data (`extra`).
+
+--------------------------------
+
+### Query > Attributes > Query.samples
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+Query.samples: The number of samples passed.
+
+--------------------------------
+
+### Program > Attributes > Program.extra
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The extra attribute allows for user-defined data to be attached to the Program object.
+
+--------------------------------
+
+### Context.release()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `release()` method is used for releasing resources.
+
+--------------------------------
+
+### StorageBlock
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/storage_block.md
+
+The StorageBlock class provides attributes such as binding, value, name, index, and size, which represent the properties of the storage block.
+
+--------------------------------
+
+### Context.info
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.info` attribute is a dictionary containing OpenGL limits and information about the current context. This can include details such as the maximum texture size.
+
+--------------------------------
+
+### Query
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+The Query object provides information about a rendering operation, including the number of samples passed, the number of primitives generated, and the time elapsed in nanoseconds. It also holds a reference to the ConditionalRender object and the Context it belongs to, as well as any user-defined extra data.
+
+--------------------------------
+
+### Program > Methods > Program.__getitem__
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+Members such as uniforms, uniform blocks, attributes, and varyings can be accessed by name using dictionary-like syntax (e.g., program['color']). Values can be set directly on the returned member object or using the __setitem__ shortcut. For byte data, the write() method must be used.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.components
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The number of components in the renderbuffer's data.
+
+--------------------------------
+
+### VertexArray > Attributes > extra
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The extra attribute allows for user-defined data.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.samples
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The number of samples used for multisampling in the renderbuffer.
+
+--------------------------------
+
+### Functionality expansion
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/functionality_expansion/index.md
+
+ModernGL offers various functionalities to expand its capabilities, including rendering to a window.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.extra
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+User-defined data that can be attached to the renderbuffer.
+
+--------------------------------
+
+### Framebuffer.samples
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The number of samples used by the framebuffer.
+
+--------------------------------
+
+### Program > Methods > Program.__iter__
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The __iter__() method yields the names of all internal members, including uniforms, attributes, and varyings, as strings. This allows iterating through program members and filtering them by type if needed.
+
+--------------------------------
+
+### Program > Attributes > Program.ctx
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The ctx attribute provides access to the context this Program object belongs to.
+
+--------------------------------
+
+### VertexArray > Attributes > scope
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The scope attribute specifies the scope to use while rendering.
+
+--------------------------------
+
+### Framebuffer.extra
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+Allows for user-defined data to be attached to the framebuffer object.
+
+--------------------------------
+
+### Context.extensions
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.extensions` attribute is a set of strings listing all supported OpenGL extensions. Extension names in this set have a `GL_` prefix, corresponding to the standard specification names.
+
+--------------------------------
+
+### ModernGL Examples
+
+Source: https://github.com/moderngl/moderngl/blob/main/examples/README.md
+
+The examples cover a wide range of ModernGL features, including basic rendering, shaders, camera controls, vertex buffers, uniforms, multiple objects, different geometries, texture mapping, model loading, lighting, multiple shader programs, uniform buffers, shader includes, postprocessing effects, and image overlays.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.glo
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The internal OpenGL object handle. This value is provided for interoperability and debug purposes only.
+
+--------------------------------
+
+### Context.finish()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `finish()` method waits for all drawing commands to complete.
+
+--------------------------------
+
+### Sampler > Methods
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+The `assign()` method is a helper for assigning samplers to scopes, facilitating the management of multiple samplers within a rendering scope.
+
+--------------------------------
+
+### VertexArray > Attributes > ctx
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The ctx attribute provides the context this object belongs to.
+
+--------------------------------
+
+### Install
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+This section covers installation of ModernGL, including installation from PyPI using pip, setting up a development environment, using ModernGL with Mesa 3D on Windows, and using ModernGL in CI environments.
+
+--------------------------------
+
+### ModernGL > Extras > moderngl-window
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+The `moderngl-window` extra facilitates window creation and resource loading, simplifying the setup for graphical applications. Installation is done via `pip install moderngl-window`.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.ctx
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The context this renderbuffer object belongs to.
+
+--------------------------------
+
+### Framebuffer.color_attachments
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The color attachments associated with the framebuffer.
+
+--------------------------------
+
+### Framebuffer.depth_attachment
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The depth attachment associated with the framebuffer.
+
+--------------------------------
+
+### Context Info
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/context.md
+
+The `info` property of a ModernGL context provides various details such as limits and driver information. It is often useful to access the vendor and renderer of the context using keys like 'GL_VENDOR' and 'GL_RENDERER'. By default, ModernGL requests a version 3.3 context, which might be reflected in the reported GL_VERSION.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/buffer.md
+
+Key attributes of a Buffer object include its `size` in bytes, a `dynamic` flag indicating if it's intended for frequent updates, the `ctx` it belongs to, its internal OpenGL object ID (`glo`) for interoperability, and `extra` for user-defined data.
+
+--------------------------------
+
+### Query > Attributes > Query.primitives
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+Query.primitives: The number of primitives generated.
+
+--------------------------------
+
+### Uniform > Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/uniform.md
+
+The Uniform class has several attributes providing metadata about the uniform. These include its location (an integer representing its position in the shader program), array_length (the size of the array if it's an array uniform, otherwise 1), dimension (the uniform's dimension), name (the GLSL variable name), value (the current data stored in the uniform), and extra (for user-defined data).
+
+--------------------------------
+
+### Program > Methods > Program.get
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The get() method returns a Uniform, UniformBlock, Attribute, or Varying. An optional default value can be provided if the key does not exist.
+
+--------------------------------
+
+### Context.query
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.query` method returns a `Query` object used for performance monitoring. It supports querying parameters like samples passed, any samples passed, elapsed time, and primitives generated.
+
+--------------------------------
+
+### Framebuffer.bits
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The number of bits used by the framebuffer.
+
+--------------------------------
+
+### Topics > Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/index.md
+
+Buffer formats in ModernGL define the structure and interpretation of data within buffers. This includes understanding the syntax for specifying buffer formats and exploring various examples to see how they are applied in practice.
+
+--------------------------------
+
+### Framebuffer.ctx
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The context this framebuffer object belongs to.
+
+--------------------------------
+
+### VertexArray > render
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The render primitive (mode) must be the same as the input primitive of the GeometryShader. Parameters include mode, vertices, first, and instances.
+
+--------------------------------
+
+### Varying
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/varying.md
+
+A Varying object represents a program output varying, accessible through Program.__getitem__(). It has properties for its name (str), output location number (int), and user-defined extra data (Any).
+
+--------------------------------
+
+### VertexArray > Attributes > instances
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The instances attribute gets or sets the number of instances to render.
+
+--------------------------------
+
+### Program > Attributes > Program.glo
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The glo attribute represents the internal OpenGL object handle, useful for interoperability and debugging purposes.
+
+--------------------------------
+
+### Sampler > Methods
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+The `use()` method binds the sampler to a specified texture unit, while the `clear()` method removes the sampler binding from a texture unit.
+
+--------------------------------
+
+### Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+When rendering multiple instances of objects, different buffers can have distinct usage specifiers. For example, `vbo_verts_normals` can contain vertices and normals for a single object, `vbo_offset_orientation` can store positioning and orientation data for each instance, and `vbo_colors` can hold color information. The usage specifier determines how data from these buffers is applied: `/v` applies data per vertex, `/i` applies data per instance, and `/r` applies data once per render call to all vertices and instances.
+
+--------------------------------
+
+### Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+The `/i` usage specifier indicates that data is passed to all vertices within an instance, and then the next value in the buffer is used for the next instance. This is suitable for per-instance data such as offsets or transformations.
+
+--------------------------------
+
+### Context.viewport
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The viewport defines the rendering area of the active framebuffer. It can be set to a tuple of (x, y, width, height). If no framebuffer is bound, it defaults to (0, 0, 0, 0).
+
+--------------------------------
+
+### Buffer Formats > Example of simple usage
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+In VAO content, a format like '2f' signifies an array of two floats per attribute, passed to a shader attribute declared as 'in vec2'. If size and usage are omitted, floats default to 4 bytes and usage defaults to vertex data.
+
+--------------------------------
+
+### Summary
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Integration with ModernGL follows a lifecycle of creating persistent objects at startup, updating uniforms and buffers per frame, rendering using VAOs or compute shaders, and reading results from framebuffers. State management is best handled with Scope objects to ensure consistent settings. For thread-safe applications or contexts managed by other libraries, set `ctx.gc_mode = 'context_gc'` and call `ctx.gc()` per frame for safe memory reclamation. The Query object aids in GPU performance profiling by providing timing and sample counts within the render loop.
+
+--------------------------------
+
+### Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+Other texture attributes include repeat_x, repeat_y, filter, compare_func, and anisotropy, which are linked to the `Sampler` object. Additionally, a texture has a reference to its context, its internal OpenGL object (`glo`) for interoperability and debugging, and a field for user-defined data (`extra`).
+
+--------------------------------
+
+### Primitive Modes > Context.POINTS
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.POINTS is a primitive mode where each vertex represents a point.
+
+--------------------------------
+
+### Other Enums
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.FIRST_VERTEX_CONVENTION specifies that the first vertex is the source of data for flat shaded varyings. Context.LAST_VERTEX_CONVENTION specifies that the last vertex is the source of data for flat shaded varyings. Both are used with Context.provoking_vertex.
+
+--------------------------------
+
+### Framebuffer > Methods > Framebuffer.read
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `read()` method reads the content of the framebuffer into bytes. It supports specifying the viewport, number of components, attachment (color or depth), byte alignment, data type, and clamping of floating-point values.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.dtype
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The data type of the renderbuffer.
+
+--------------------------------
+
+### Context.max_anisotropy
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+max_anisotropy indicates the maximum supported value for anisotropic filtering.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.width
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The width of the renderbuffer.
+
+--------------------------------
+
+### VertexArray > bind
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The bind method is used to bind individual attributes to buffers. Parameters include location, class (f, i, or d), buffer, format, offset, stride, divisor, and normalize.
+
+--------------------------------
+
+### Buffer Formats
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+Buffer formats specify the data type, count, size, and usage of data within a buffer. For example, '2f' indicates two floats, defaulting to 4 bytes each and used for vertex attributes. '3i2/i' means three 2-byte integers (shorts) for an ivec3 attribute, with '/i' specifying instanced rendering usage.
+
+--------------------------------
+
+### Program Members
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+Programs can have various members, including Uniforms, UniformBlocks, StorageBlocks, Attributes, and Varyings. These members allow for data to be passed into and out of the shaders.
+
+--------------------------------
+
+### Context.LINES_ADJACENCY
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINES_ADJACENCY, Context.LINE_STRIP_ADJACENCY, Context.TRIANGLES_ADJACENCY, and Context.TRIANGLE_STRIP_ADJACENCY are special primitives designed for use with geometry shaders. They provide the geometry shader with more vertices per primitive, requiring data duplication in buffers.
+
+--------------------------------
+
+### Context Inspection — ctx.info, ctx.extensions, ctx.error
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Context inspection methods allow querying hardware limits, supported extensions, and the last OpenGL error. `ctx.info` provides hardware limits like `GL_MAX_TEXTURE_SIZE` and `GL_MAX_SAMPLES`. `ctx.extensions` checks for support of specific OpenGL extensions. `ctx.error` retrieves the last OpenGL error, and `ctx.version_code` provides a shortcut to the OpenGL version.
+
+--------------------------------
+
+### VertexArray > Attributes > program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The program attribute represents the program assigned to the VertexArray, which is used when rendering or transforming primitives.
+
+--------------------------------
+
+### Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+The `/r` usage specifier means the data is passed once for the entire render call to every vertex of every instance. This is efficient for constant data like a single color applied to all objects, avoiding duplication in the buffer.
+
+--------------------------------
+
+### Context Flags > Context.NOTHING
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.NOTHING represents no states and can be used with Context.enable_only() to disable all states.
+
+--------------------------------
+
+### Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+While data like a constant color can be passed as a uniform, using an attribute with `/r` offers more flexibility. This approach allows the same shader program to be reused with different buffer configurations, enabling color data that varies per instance or per vertex.
+
+--------------------------------
+
+### Scope
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/scope.md
+
+Scope objects can be used with a `with` statement to automatically manage state changes. They can also be combined with other context managers, such as queries, to perform rendering and then retrieve results.
+
+--------------------------------
+
+### Blend Functions > Context.ONE
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.ONE blend function results in a color of (1,1,1,1).
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.height
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The height of the renderbuffer.
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.size
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+The size of the renderbuffer as a tuple of (width, height).
+
+--------------------------------
+
+### Context.default_texture_unit
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+default_texture_unit specifies the index of the default texture unit.
+
+--------------------------------
+
+### Buffer Format > Syntax
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+The syntax for a buffer format is `[count]type[size] [[count]type[size]...] [/usage]`. `count` is an optional integer defaulting to 1. `type` is a single character: 'f' for float, 'i' for int, 'u' for unsigned int, and 'x' for padding. `size` is an optional number of bytes, defaulting to 4 for numeric types and 1 for padding. Multiple triples can be space-separated. `/usage` is optional and indicates how values are passed to the shader: '/v' per vertex (default), '/i' per instance, or '/r' per render (like a uniform).
+
+--------------------------------
+
+### ComputeShader > Methods > __iter__
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/compute_shader.md
+
+Members of a Compute Shader, including uniforms, uniform blocks, and storage blocks, can be iterated over to retrieve their names and associated objects.
+
+--------------------------------
+
+### Query > Attributes > Query.elapsed
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+Query.elapsed: The time elapsed in nanoseconds.
+
+--------------------------------
+
+### VertexArray > Attributes > mode
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The mode attribute gets or sets the default rendering mode, which is used when mode is not passed in rendering calls.
+
+--------------------------------
+
+### Framebuffer.size
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The size of the framebuffer, represented as a tuple of integers (width, height). Framebuffers created by a window will only report its initial size; it's better to get size information from the window itself.
+
+--------------------------------
+
+### Texture
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+A Texture is an OpenGL object that contains one or more images of the same format. Textures can be used as a source for shaders or as render targets. Texture objects cannot be instantiated directly and require a context, created using `Context.texture()` or `Context.depth_texture()`.
+
+--------------------------------
+
+### Framebuffer > Attributes > Framebuffer.viewport
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `viewport` attribute allows getting or setting the viewport of the framebuffer, defining the rendering area.
+
+--------------------------------
+
+### ComputeShader > Methods > __getitem__
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/compute_shader.md
+
+The `ComputeShader` class allows access to its members, such as uniforms, uniform blocks, and storage blocks, using dictionary-like syntax (`[]`). Values can be set directly for uniforms or uniform blocks, and bindings can be configured for storage blocks.
+
+--------------------------------
+
+### Framebuffer.glo
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The internal OpenGL object ID for the framebuffer. This value is provided for interoperability and debug purposes only.
+
+--------------------------------
+
+### ModernGL
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The library is centered around a `Context` object, which serves as a factory for OpenGL resources like `Buffer`, `Program`, `VertexArray`, `Texture`, `Framebuffer`, `Sampler`, `Scope`, and `ComputeShader`. The typical rendering pipeline involves creating a `Context`, compiling a `Program`, uploading data to `Buffer` objects, assembling a `VertexArray`, and rendering using `VertexArray.render()`. Off-screen rendering uses `Framebuffer`, and compute tasks use `ComputeShader`.
+
+--------------------------------
+
+### Context.enable_direct()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `enable_direct()` method provides direct access to `glEnable`, allowing the enabling of unsupported capabilities in ModernGL. It should not be used for capabilities already supported by ModernGL.
+
+--------------------------------
+
+### Context.multisample
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.multisample` property enables or disables multisample mode (`GL_MULTISAMPLE`). This is a write-only property.
+
+--------------------------------
+
+### Context Flags > Context.PROGRAM_POINT_SIZE
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+When PROGRAM_POINT_SIZE is disabled, Context.point_size is used instead.
+
+--------------------------------
+
+### Context Flags > Context.BLEND
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.BLEND enables or disables blending.
+
+--------------------------------
+
+### Query > Attributes > Query.crender
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/query.md
+
+Query.crender: Represents a ConditionalRender object.
+
+--------------------------------
+
+### Context > Objects > Context.vertex_array
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+A VertexArray object, created with Context.vertex_array(), defines how buffers are read by a shader program. It takes the program, a list describing the buffer content (including buffer, format string, and attribute names), and optionally an index buffer. The mode parameter specifies the default draw mode, such as TRIANGLES.
+
+--------------------------------
+
+### Blend Functions > Context.ZERO
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.ZERO blend function results in a color of (0,0,0,0).
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/buffer.md
+
+Helper methods `Buffer.bind()` and `Buffer.assign()` are available for integrating buffers with vertex arrays and scopes, respectively. `Buffer.release()` is used to free the ModernGL object.
+
+--------------------------------
+
+### Context.copy_buffer()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `copy_buffer()` method copies content from a source buffer to a destination buffer. It requires specifying the destination and source buffers, the number of bytes to copy, and optionally read and write offsets.
+
+--------------------------------
+
+### Creating a Context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/creating_context.md
+
+To create a headless context, use `moderngl.create_context(standalone=True)`. This is useful for applications that do not require a visible window.
+
+--------------------------------
+
+### Context.wireframe
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The wireframe property is a boolean setting used for debugging, controlling whether rendering is done in wireframe mode.
+
+--------------------------------
+
+### Scope
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/scope.md
+
+When entering a scope, specific states like the framebuffer, enabled features (e.g., BLEND, DEPTH_TEST), textures, uniform buffers, and shader storage buffers are set. Upon exiting the scope, the framebuffer and enable flags are automatically restored to their previous states. However, textures and buffers assigned to specific locations might need manual restoration if they were not part of the scope's explicit configuration.
+
+--------------------------------
+
+### Context Enums
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.SRC_ALPHA is a constant representing the source alpha value used in blending operations. Context.ONE_MINUS_SRC_ALPHA represents one minus the source alpha value. Context.DST_ALPHA represents the destination alpha value, and Context.ONE_MINUS_DST_ALPHA represents one minus the destination alpha value. Context.DST_COLOR represents the destination color, and Context.ONE_MINUS_DST_COLOR represents one minus the destination color.
+
+--------------------------------
+
+### Context > Texture3D
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.texture3d` method creates a 3D texture object. It requires the texture's size (width, height, depth), the number of components, and optionally accepts initial data, byte alignment, and data type.
+
+--------------------------------
+
+### Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+Texture attributes include width, height, size (width and height), number of components, samples for multisampling, a boolean indicating if it's a depth texture, data type, and a swizzle mask. The swizzle mask reorders the components of the `vec4` value returned by the `texture()` function in GLSL shaders.
+
+--------------------------------
+
+### Context.max_samples
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+max_samples indicates the maximum supported number of samples for multisampling operations.
+
+--------------------------------
+
+### Context.max_texture_units
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+max_texture_units specifies the maximum number of texture units available for use.
+
+--------------------------------
+
+### Creating a Context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/creating_context.md
+
+A [`Context`](../../../reference/context.md#Context) object is required to create OpenGL resources in ModernGL. ModernGL supports headless contexts and can also detect and utilize contexts from various window libraries. For rendering to a window, the `moderngl-window` library is recommended.
+
+--------------------------------
+
+### Framebuffer > Methods > Framebuffer.use
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `use()` method binds the framebuffer for rendering operations, making it the active rendering target.
+
+--------------------------------
+
+### Context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The Context class, returned by moderngl.create_context(), provides access to OpenGL features and is the factory for creating other ModernGL objects.
+
+--------------------------------
+
+### Framebuffer > Attributes > Framebuffer.width
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `width` attribute provides the width of the framebuffer. For framebuffers created by a window, it's recommended to get size information directly from the window itself as the framebuffer's reported size might only reflect its initial dimensions.
+
+--------------------------------
+
+### Context Flags > Context.DEPTH_TEST
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.DEPTH_TEST enables or disables depth testing.
+
+--------------------------------
+
+### Context.provoking_vertex
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+provoking_vertex specifies which vertex in a primitive is used as the source for flat-shaded varying data. It can be set to either the first or the last vertex of the primitive.
+
+--------------------------------
+
+### Buffer Format > Syntax
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+Valid type and size combinations include floats (1, 2, 4, 8 bytes), ints (1, 2, 4 bytes), unsigned ints (1, 2, 4 bytes), and padding (1, 2, 4, 8 bytes). The 'f1' format is unique: it uses unsigned bytes normalized to floats (0.0-1.0) for colors, and three 'f1' bytes can be passed to a vec3 or vec4 attribute.
+
+--------------------------------
+
+### Context > Depth Texture
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+A depth texture, created with `Context.depth_texture`, can be used for `sampler2D` and `sampler2DShadow` uniforms and as a depth attachment for framebuffers. It requires a size and can optionally include initial data, multisample settings, and byte alignment.
+
+--------------------------------
+
+### Framebuffer.height
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The height of the framebuffer. Framebuffers created by a window will only report its initial size; it's better to get size information from the window itself.
+
+--------------------------------
+
+### StorageBlock
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/storage_block.md
+
+The 'extra' attribute in StorageBlock is a user-defined data field.
+
+--------------------------------
+
+### VertexArray > render_indirect
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The render_indirect method allows for indirect drawing commands stored in a buffer. The draw commands are 5 integers: (count, instanceCount, firstIndex, baseVertex, baseInstance).
+
+--------------------------------
+
+### Renderbuffer > Attributes > Renderbuffer.depth
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+A boolean indicating whether the renderbuffer contains depth values.
+
+--------------------------------
+
+### VertexArray > release
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The release method is used to release the ModernGL object.
+
+--------------------------------
+
+### Scope
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/scope.md
+
+Scope objects manage rendering state. On entering a scope, they set enable flags, bind the framebuffer, and assign textures and buffers to their respective locations. On exiting, they restore the previous enable flags and framebuffer.
+
+--------------------------------
+
+### Vertex Array
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/vertex_array.md
+
+When initializing a VertexArray with multiple buffers, each buffer can be associated with specific input variables and their data types. The format string, such as '3f 2f', specifies the data type of the input variables, for example, '3f' for a vec3 and '2f' for a vec2.
+
+--------------------------------
+
+### Context > Objects > Context.texture
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The Context.texture() method creates a new Texture object, representing a 2D image usable as sampler2D uniforms or render targets. Parameters include size, number of components, optional data, multisampling samples, byte alignment, and data type. The internal_format parameter can override the default format for specific needs like sRGB or compressed textures.
+
+--------------------------------
+
+### Context > Objects > Context.buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The Context.buffer() method creates a new Buffer object. It can be initialized with data or reserve a specific amount of memory. The 'dynamic' parameter indicates if the buffer should be treated as dynamic.
+
+--------------------------------
+
+### Shader Basics
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_basics.md
+
+The basic structure of a GLSL shader requires a mandatory '#version' statement, which should be the first line of code, followed by the 'main' function. The version number, typically 330 or higher, indicates compatibility with specific OpenGL versions.
+
+--------------------------------
+
+### Program > Methods > Program.__setitem__
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The __setitem__() method allows setting the value of a uniform or uniform block. This can be done directly using dictionary-like assignment (e.g., uniform['color'] = 1.0, 1.0, 1.0, 1.0) or by first obtaining a reference to the member and then setting its value property.
+
+--------------------------------
+
+### Context.scope() — Render State Container
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.scope()` method groups framebuffer, enable flags, texture bindings, and buffer bindings into a reusable context manager. This scope saves and restores the framebuffer and enable flags on enter and exit. It can be assigned directly to a `VertexArray` to guarantee correct state during rendering.
+
+--------------------------------
+
+### Sampler > Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+Sampler attributes control various aspects of texture sampling, including the associated texture object (`texture`), repeat behavior along the X, Y, and Z axes (`repeat_x`, `repeat_y`, `repeat_z`), and filtering modes for minification and magnification (`filter`).
+
+--------------------------------
+
+### moderngl > Buffer Format Strings
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Buffer format strings, used with `Context.vertex_array()`, define how raw buffer bytes map to shader attributes. The syntax is `[count]type[size][/usage]`, with components separated by spaces. Examples include '2f' for two floats, '3f1' for three normalized unsigned bytes, 'x' for padding, and '/i' for per-instance data.
+
+--------------------------------
+
+### Topics > The Lifecycle of a ModernGL Object
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/index.md
+
+ModernGL objects have a lifecycle that involves creation, usage, and eventual release. Understanding how contexts are managed, including standalone or headless contexts, context detection mechanisms, and potential threading issues, is crucial. Manually releasing objects and detecting when they have been released are also important aspects of managing resources effectively.
+
+--------------------------------
+
+### Context.TRIANGLES
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.TRIANGLES renders triangles by taking vertices in groups of three. Vertices 0, 1, and 2 form the first triangle, vertices 3, 4, and 5 form the second, and so on.
+
+--------------------------------
+
+### Context.screen
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The screen property is a Framebuffer instance representing the system's default framebuffer. It's typically set when creating a context that attaches to an existing context. For standalone contexts without a default framebuffer, this property is not set.
+
+--------------------------------
+
+### Texture Formats > Overriding internalformat
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+The `Context.texture()` method allows overriding the default internal format of a texture. This is useful when a different internal format is required, such as `GL_SRGB8` or a compressed format. It's important to ensure the context supports the chosen internal format by checking `Context.extensions`. Enum values for alternative internal formats are not provided directly and must be looked up in the OpenGL registry.
+
+--------------------------------
+
+### Context.sampler() — Texture Sampling Parameters
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.sampler()` method wraps a `Texture` with explicit filtering and wrapping configuration. This configuration overrides the texture's own state when bound to a texture unit and is preferred over setting repeat/filter directly on the texture object. It supports various filtering modes like nearest-neighbor and linear, repeat settings (clamping to edge), anisotropic filtering up to 16.0, border color configuration, and depth comparison for shadow mapping.
+
+--------------------------------
+
+### Context.scope
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.scope` method returns a `Scope` object, which can be attached to `VertexArray` objects to manage rendering states. Scopes help minimize rendering within the wrong context by enforcing specific settings like framebuffer, enable-only flags, textures, uniform buffers, storage buffers, and samplers.
+
+--------------------------------
+
+### Context.max_integer_samples
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+max_integer_samples represents the maximum number of integer samples supported.
+
+--------------------------------
+
+### Sampler > Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+The `min_lod` and `max_lod` attributes control the minimum and maximum level-of-detail parameters, respectively. These floating-point values limit the selection of mipmap levels, influencing the sharpness or blurriness of textures based on distance.
+
+--------------------------------
+
+### Context.depth_renderbuffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.depth_renderbuffer` method returns a new `Renderbuffer` object specifically for depth information. It takes the size and the number of samples for multisampling as parameters.
+
+--------------------------------
+
+### Context.cull_face
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The cull_face property specifies which face sides to cull when face culling is enabled. Acceptable values are 'back' (default), 'front', or 'front_and_back'.
+
+--------------------------------
+
+### Blend Function Shortcuts
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.DEFAULT_BLENDING is a shortcut for the blend function SRC_ALPHA, ONE_MINUS_SRC_ALPHA. Context.ADDITIVE_BLENDING is a shortcut for additive blending using ONE, ONE. Context.PREMULTIPLIED_ALPHA is a shortcut for blend modes used with premultiplied alpha, defined as SRC_ALPHA, ONE.
+
+--------------------------------
+
+### Context > Objects > Context.program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+A Program object is created using the Context.program() method, which takes shader sources as input. It can also map named fragment shader outputs to framebuffer attachments using the fragment_outputs parameter, or by using `layout(location=N)` in the fragment shader.
+
+--------------------------------
+
+### Context > Texture Array
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+A `TextureArray` object, created using `Context.texture_array`, is a collection of textures stacked together. It requires the size (width, height, layers), number of components, and can optionally include initial data, byte alignment, and data type. The data for a texture array should be arranged with each layer stacked vertically.
+
+--------------------------------
+
+### Headless on Ubuntu 18 Server > Creating a context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/techniques/headless_ubuntu_18_server.md
+
+Before creating a rendering context, a virtual display must be initiated. This is typically done by setting the DISPLAY environment variable and running Xvfb in the background. For example: `export DISPLAY=:99.0` and `Xvfb :99 -screen 0 640x480x24 &`.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/buffer.md
+
+The `Buffer.clear()` method can be used to clear buffer content, optionally specifying a size, offset, and a chunk of data to use for clearing. This method is useful for resetting buffer data.
+
+--------------------------------
+
+### Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+The `/v` usage specifier in a buffer format means the data is passed to each vertex within an instance. This is typically used for vertex-specific attributes like position and normal. The first VBO in a Vertex Array Object (VAO) must have the `/v` usage.
+
+--------------------------------
+
+### The Lifecycle of a ModernGL Object > Standalone / Headless Context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/gc.md
+
+In standalone or headless contexts where you control context creation and destruction, the `auto` garbage collection mode is suitable. This mode automatically cleans up dead objects.
+
+--------------------------------
+
+### Uniform > Methods
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/uniform.md
+
+The Uniform class provides methods to read and write the value of a uniform variable within a shader program. The read() method retrieves the current value as bytes, while the write(data) method updates the uniform with new data.
+
+--------------------------------
+
+### Primitive Modes > Context.LINES
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINES is a primitive mode where pairs of vertices form lines. An odd number of vertices will result in the last vertex being ignored.
+
+--------------------------------
+
+### ModernGL > Extras > glcontext
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+The `glcontext` extra allows for headless context creation, enabling rendering without a display. It can be installed using `pip install moderngl[headless]`.
+
+--------------------------------
+
+### Context.PATCHES
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.PATCHES is a primitive type used with Tessellation. It allows for a user-defined number of vertices, which are then tessellated into points, lines, or triangles based on control and evaluation shaders.
+
+--------------------------------
+
+### Context Creation
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/context.md
+
+Since ModernGL 5.6, context creation is managed by the separate 'glcontext' package. This change simplifies adding new context support and decouples context creation from ModernGL releases. Users should refer to the 'glcontext' project for the most up-to-date list of supported backends, especially for non-default OS contexts.
+
+--------------------------------
+
+### Creating a Context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/creating_context.md
+
+To detect and use an active context created by a window library, simply call `moderngl.create_context()`.
+
+--------------------------------
+
+### Context > Texture Cube
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.texture_cube` method creates a cubemap texture. The width and height of the cubemap must be the same. The method requires the texture size, number of components, and can optionally take initial data, byte alignment, data type, and an internal format override. The data ordering for a cubemap is specific: positive_x, negative_x, positive_y, negative_y, positive_z, negative_z.
+
+--------------------------------
+
+### Rendering to a window
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/functionality_expansion/window_using.md
+
+The moderngl-window module provides functionality to integrate ModernGL with a windowing system. It uses pyglet as its default backend, which is installed automatically. The usage is primarily through moderngl_window.WindowConfig.
+
+--------------------------------
+
+### First rendering
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/index.md
+
+ModernGL simplifies OpenGL by reducing the number of lines of code required due to generalized functions. This approach also enhances code portability and reduces the potential for bugs across different platforms.
+
+--------------------------------
+
+### Context.depth_func
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The default depth function can be set using `Context.depth_func`. Supported values include comparison operators like '<=', '<', '>=', '>', '==', '!=' and constants representing never ('0') or always ('1') depth testing.
+
+--------------------------------
+
+### Program > Methods > Program.release
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The release() method is used to release the ModernGL object, freeing associated resources.
+
+--------------------------------
+
+### ModernGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/index.md
+
+ModernGL is a high performance rendering module for Python.
+
+--------------------------------
+
+### Topics > Texture Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/index.md
+
+ModernGL supports a variety of texture formats, including float textures, integer textures, and normalized integer textures. It also allows for overriding the internal format of textures, providing flexibility in how texture data is stored and interpreted.
+
+--------------------------------
+
+### VertexArray > Attributes > vertices
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The vertices attribute indicates the number of vertices detected, which is the minimum number of vertices possible per Buffer. The size of the index_buffer determines this number. Per-instance vertex attributes do not affect this count.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/buffer.md
+
+The `Buffer.write()` method writes data into the buffer, accepting bytes and an optional offset in bytes. The `Buffer.read()` method retrieves data from the buffer, allowing specification of size and offset, with a default of reading all data. `Buffer.read_into()` reads data directly into a provided bytearray buffer, also with size and offset parameters.
+
+--------------------------------
+
+### Context.LINE_STRIP
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINE_STRIP draws lines connecting adjacent vertices sequentially. For n vertices, it generates n-1 lines. The command is ignored if only one vertex is provided.
+
+--------------------------------
+
+### Topics > Context Creation
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/index.md
+
+Context creation in ModernGL involves several considerations. You can require a minimum OpenGL version, specify the context backend to be used, and manage context sharing between different parts of your application. Additionally, you can retrieve information about the created context.
+
+--------------------------------
+
+### VertexArray > Attributes > glo
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The glo attribute is the internal OpenGL object, provided for interoperability and debug purposes only.
+
+--------------------------------
+
+### Texture > Methods > Texture.write
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The `Texture.write()` method updates the texture's content from byte data or a moderngl `Buffer`. It requires the pixel data, a `viewport` specifying the region to update, and an optional `alignment` parameter.
+
+--------------------------------
+
+### Context.disable()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `disable()` method disables specified flags. Flags can be combined using the logical OR operator. Valid flags are the same as those used with `enable_only()`.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/buffer.md
+
+A static buffer can be created and populated with data immediately upon creation, often referred to as a Vertex Buffer Object (VBO) when storing vertex data.
+
+--------------------------------
+
+### Blend Functions > Context.SRC_COLOR
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.SRC_COLOR blend function uses the source color components (Rs0/kR,Gs0/kG,Bs0/kB,As0/kA).
+
+--------------------------------
+
+### TextureCube
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture_cube.md
+
+ModernGL globally enables GL_TEXTURE_CUBE_MAP_SEAMLESS to ensure seamless filtering across the cube faces.
+
+--------------------------------
+
+### Buffer Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+A buffer format is a short string describing the layout of data in a vertex buffer object (VBO). It specifies what each element of the array looks like, for example, a buffer containing an array of high-precision 2D vertex positions might have the format "2f8", meaning each element consists of two floats, each 8 bytes wide (doubles). Buffer formats are used in the Context.vertex_array() constructor.
+
+--------------------------------
+
+### Context Creation > Context Sharing
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/context.md
+
+Object sharing between contexts is an experimental feature that allows ModernGL objects to be used across multiple contexts if the underlying OpenGL context supports it and the 'share' parameter is enabled during creation. Objects have a 'ctx' property indicating their creation context, but ModernGL does not enforce context checking for shared objects. This feature has limitations, particularly with objects that reference other objects like framebuffers or vertex array objects.
+
+--------------------------------
+
+### moderngl > moderngl.create_standalone_context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/moderngl.md
+
+The `moderngl.create_standalone_context()` function is deprecated and should be replaced by `moderngl.create_context()` with the `standalone` parameter set to `True`.
+
+--------------------------------
+
+### Framebuffer > Methods > Framebuffer.release
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `release()` method is used to release the framebuffer resources.
+
+--------------------------------
+
+### ModernGL > Compared to PyOpenGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+ModernGL simplifies buffer creation compared to PyOpenGL. For instance, creating a buffer with data requires a single line in ModernGL (`ctx.buffer(b"Hello World!")`), whereas PyOpenGL involves multiple steps for generating, binding, and uploading data to a buffer.
+
+--------------------------------
+
+### ModernGL Examples
+
+Source: https://github.com/moderngl/moderngl/blob/main/examples/README.md
+
+To get started with ModernGL examples, you need to install the necessary libraries: moderngl, numpy, objloader, pillow, pygame-ce, and pyglm. The installation can be done using pip.
+
+--------------------------------
+
+### Context.LINE_LOOP
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINE_LOOP draws lines connecting vertices sequentially, with the last vertex also connecting to the first, forming a closed loop. It generates n lines for n input vertices, ignoring the command if only one vertex is provided.
+
+--------------------------------
+
+### Program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/program.md
+
+Adding a fragment shader to a program enables the creation of algorithms for writing pixels into a texture, which is the main function of a shader. This complements vertex shaders that handle data conversion.
+
+--------------------------------
+
+### Context.error
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.error` attribute provides a human-readable string of the result of `glGetError()`. This is intended for debugging purposes and may impact performance if used frequently within a draw loop.
+
+--------------------------------
+
+### Buffer Formats > Example of single interleaved array
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+Buffers can contain interleaved values, such as a 2D vertex position (two floats), an RGB color (three unsigned bytes normalized to floats), and padding. This is represented in the VAO content as '2f 3f1 x', where '2f' is for position, '3f1' for color, and 'x' for padding.
+
+--------------------------------
+
+### Program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/program.md
+
+ModernGL offers flexibility by allowing users to define their own shader programs for rendering, which differs from standard plotting libraries. This approach provides freedom in how data is rendered.
+
+--------------------------------
+
+### Framebuffer > Methods > Framebuffer.read_into
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `read_into()` method reads framebuffer content directly into a provided buffer object, offering control over the viewport, components, attachment, alignment, data type, and write offset.
+
+--------------------------------
+
+### Blend Equations
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Blend equations define how source and destination colors are combined. Context.FUNC_ADD performs source + destination. Context.FUNC_SUBTRACT performs source - destination. Context.FUNC_REVERSE_SUBTRACT performs destination - source. Context.MIN selects the minimum of the source and destination colors, while Context.MAX selects the maximum.
+
+--------------------------------
+
+### Context.framebuffer() — Off-Screen Render Target
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.framebuffer()` method creates an off-screen render target by attaching `Texture` or `Renderbuffer` color and/or depth attachments. Rendered results can be read back using `fbo.read()`. It supports simple RGBA framebuffers, framebuffers with depth attachments, and multiple color attachments for MRT (Multiple Render Targets). Viewport, scissor, and color/depth write masks can also be configured.
+
+--------------------------------
+
+### Context.enable_only()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `enable_only()` method clears all existing flags and applies new ones. Available flags include `moderngl.NOTHING`, `moderngl.BLEND`, `moderngl.DEPTH_TEST`, `moderngl.CULL_FACE`, `moderngl.RASTERIZER_DISCARD`, and `moderngl.PROGRAM_POINT_SIZE`. These flags are defined as bit flags that can be logically OR-ed together.
+
+--------------------------------
+
+### Texture.get_handle
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The `Texture.get_handle()` method provides a handle for Bindless Textures. Once a handle is created, its parameters like filter and wrap cannot be changed, and this immutability cannot be undone. Handles are only usable by shaders when the texture is resident. This method can be called multiple times to manage texture residency, and it returns the same handle if it already exists.
+
+--------------------------------
+
+### Context.patch_vertices
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+patch_vertices defines the number of vertices used to form a single patch primitive, relevant for tessellation.
+
+--------------------------------
+
+### Framebuffer > Methods > Framebuffer.clear
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `clear()` method allows clearing the framebuffer with specified color and depth values. It respects scissor tests and color/depth masks, enabling selective clearing of components or viewports. The viewport parameter can be a 2-tuple for width/height or a 4-tuple for a specific region.
+
+--------------------------------
+
+### Using GLSL in ModernGL > Inputs and Outputs
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+In GLSL shaders, 'Attributes' are per-vertex data for the vertex shader (e.g., position, normals). 'Varyings' are interpolated data passed from vertex to fragment shaders (e.g., colors). The fragment shader outputs the final pixel color ('fragColor').
+
+--------------------------------
+
+### ConditionalRender
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/conditional_render.md
+
+The ConditionalRender class represents a ConditionalRender object. These objects are exclusively accessible from Query objects.
+
+--------------------------------
+
+### Buffer Format > Syntax
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+The buffer format syntax is specific to ModernGL and differs from Python's `struct.pack`. For rare, specialized attribute formats not expressible by buffer formats, the `VertexArray.bind()` method can be used for manual configuration, though this is not generally recommended.
+
+--------------------------------
+
+### Installation
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+To install ModernGL, use `pip install moderngl`. For headless or windowless support, install `pip install "moderngl[headless]"`. The `moderngl-window` package can be installed for window creation and resource loading helpers.
+
+--------------------------------
+
+### Context.clear
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.clear` method clears the bound framebuffer. It respects viewport settings, scissor tests, and color/depth masks, allowing for selective clearing of buffers or specific components. Optional arguments include viewport coordinates and RGBA color values.
+
+--------------------------------
+
+### Context.blend_equation
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.blend_equation` property defines how source and destination colors are combined during blending operations. It can be set for RGB and alpha channels independently. Supported equations include `moderngl.FUNC_ADD`, `moderngl.FUNC_SUBTRACT`, `moderngl.FUNC_REVERSE_SUBTRACT`, `moderngl.MIN`, and `moderngl.MAX`.
+
+--------------------------------
+
+### Context.objects
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Moderngl objects scheduled for deletion are stored in the `Context.objects` deque. These objects are removed when the `Context.gc()` method is invoked.
+
+--------------------------------
+
+### Texture > Methods > Texture.use
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The `Texture.use()` method binds the texture to a specified texture unit. It is recommended to use `Sampler` objects instead of calling this method directly on the Texture object. The texture unit assigned here should correspond to the sampler uniform in the shader.
+
+--------------------------------
+
+### Context.scissor
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The scissor box defines a clipping region for the active framebuffer. Fragments outside this box are discarded. Setting a scissor box enables scissor testing. Setting it to None disables scissor testing and reverts the box to match the framebuffer size.
+
+--------------------------------
+
+### `Context.program()` — Compile a GLSL Shader Program
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.program()` method compiles GLSL shader stages into a `Program` object. Uniform values can be set using dictionary-like access (e.g., `program['name'] = value`) or by writing bytes directly. Transform-feedback programs can be created without a fragment shader by specifying `varyings`.
+
+--------------------------------
+
+### Program > Attributes > Program.geometry_input
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The geometry_input attribute specifies the geometry input primitive type, such as POINTS, LINES, or TRIANGLES, used for validation when a GeometryShader exists.
+
+--------------------------------
+
+### Vertex Array
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/vertex_array.md
+
+A VertexArray acts as a pipeline, taking a Program, a Buffer with input data, and the names of input variables for that program as arguments. VertexArrays can be initialized using either a single buffer for all input variables or multiple buffers for all input variables.
+
+--------------------------------
+
+### VertexArray > Attributes > index_buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The index_buffer attribute holds the index buffer if set, otherwise it is None. The index_element_size attribute represents the byte size of each element in the index buffer.
+
+--------------------------------
+
+### Notes
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+ModernGL provides a Pythonic API for interacting with OpenGL, allowing integration with various windowing libraries. The 'moderngl-window' library offers additional support for window management and resource loading.
+
+--------------------------------
+
+### Context.gc_mode
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The garbage collection mode determines how objects are managed. The default mode is `None`, meaning no automatic garbage collection occurs and objects must be explicitly released. Other modes include `auto` for Python-like automatic garbage collection and `context_gc` which collects dead objects within the context when `Context.gc()` is called.
+
+--------------------------------
+
+### Program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+A Program object represents fully processed executable code in the OpenGL Shading Language, for one or more Shader stages. In ModernGL, a Program object can be assigned to VertexArray objects, which bind the Program when render() or transform() is called. Program objects do not have a use() method; VertexArrays encapsulate this mechanism. Programs cannot be instantiated directly and require a context, obtained via Context.program().
+
+--------------------------------
+
+### Context.blend_func
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.blend_func` property sets the blending function, which can be configured for RGB and alpha channels separately. Supported functions include various constants like `moderngl.ZERO`, `moderngl.ONE`, `moderngl.SRC_ALPHA`, etc., as well as predefined shortcuts like `moderngl.DEFAULT_BLENDING`, `moderngl.ADDITIVE_BLENDING`, and `moderngl.PREMULTIPLIED_ALPHA`.
+
+--------------------------------
+
+### Context.depth_texture_cube
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.depth_texture_cube` method returns a new `TextureCube` object, which represents a cube map texture. It takes the size of the texture, optional initial data, and byte alignment as parameters.
+
+--------------------------------
+
+### Headless on Ubuntu 18 Server > Running an example
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/techniques/headless_ubuntu_18_server.md
+
+To verify that headless rendering is working correctly, you can run a basic example that renders a triangle and saves it to a PNG file. This involves installing necessary Python libraries like moderngl, numpy, pyrr, and pillow, and then executing a script that sets up the context, renders the triangle, and outputs the image.
+
+--------------------------------
+
+### Sampler > Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+The `border_color` attribute defines the (r, g, b, a) color used for texture borders. Setting this value overrides the `repeat_` settings, causing the texture wrap to return the border color for coordinates outside the [0, 1] range.
+
+--------------------------------
+
+### moderngl
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/moderngl.md
+
+The moderngl module is responsible for creating a Context object, which represents the OpenGL rendering context. This context is necessary for all subsequent graphics operations. You can create a context using `moderngl.create_context()`, which loads OpenGL functions from an existing OpenGL context. An OpenGL context must exist before calling this function, typically after a window has been created, or you can opt for a windowless standalone mode.
+
+--------------------------------
+
+### Context > Framebuffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Framebuffer` object is a collection of images that can be used as render targets. Its images can be either Textures or Renderbuffers, and it is created using the `Context.framebuffer` method, which takes a list of color attachments and an optional depth attachment.
+
+--------------------------------
+
+### Notes
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+ModernGL does not implement the entire OpenGL feature set or all extensions. However, it allows direct interaction with ModernGL objects from OpenGL.
+
+--------------------------------
+
+### Framebuffer > Attributes > Framebuffer.scissor
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `scissor` attribute controls the scissor box, discarding fragments outside this defined area. Setting it enables scissor testing, while setting it to `None` disables it and reverts to the framebuffer size.
+
+--------------------------------
+
+### Installation > Development Environment
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/installation.md
+
+To set up a development environment, clone the ModernGL repository. Building on Windows requires Visual C++ build tools, on OS X it requires Xcode and command line tools, and on Linux it generally works out of the box. After building, install the package in editable mode using `pip install -e .` and ensure all development dependencies are installed.
+
+--------------------------------
+
+### VertexArray > transform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+The transform method transforms vertices and stores the output in a single buffer. The transform primitive (mode) must be the same as the input primitive of the GeometryShader. Parameters include buffer, mode, vertices, first, instances, and buffer_offset.
+
+--------------------------------
+
+### Texture.get_handle
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The amount of storage for resident textures might be less than the total available texture storage. It's recommended to minimize the time textures spend as resident and avoid frequent resident/unresident calls. Textures should be made unresident when they are no longer needed for a period.
+
+--------------------------------
+
+### ModernGL
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+ModernGL is a Python wrapper for OpenGL Core, designed to simplify the creation of graphics applications such as scientific simulations, games, and user interfaces. It offers an easier learning curve compared to traditional OpenGL, enabling high-performance and high-quality rendering with significantly less code.
+
+--------------------------------
+
+### `moderngl.create_context()` — Create or Attach to an OpenGL Context
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `moderngl.create_context()` function creates or attaches to an OpenGL context. It can load functions from an existing context (e.g., from a window library) or create a standalone windowless context with `standalone=True`. You can specify the minimum required OpenGL version using the `require` parameter. `moderngl.get_context()` can retrieve an existing context without manual passing.
+
+--------------------------------
+
+### Context.renderbuffer() — Non-Samplable Render Attachment
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.renderbuffer()` method creates a renderbuffer attachment for framebuffers when the rendered image does not need to be sampled as a texture. This is commonly used for MSAA (Multisample Anti-Aliasing) color or depth buffers. These renderbuffers can be used in an MSAA framebuffer, and the rendered content can be resolved to a regular texture.
+
+--------------------------------
+
+### Headless on Ubuntu 18 Server > Creating a context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/techniques/headless_ubuntu_18_server.md
+
+ModernGL can create a rendering context using either X11 or EGL. For X11, you might specify `libgl='libGL.so.1'` and `libx11='libX11.so.6'`. For EGL, the parameters would be `backend='egl'`, `libgl='libGL.so.1'`, and `libegl='libEGL.so.1'`. The `standalone=True` option is used for headless contexts.
+
+--------------------------------
+
+### Sampler > Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+The `compare_func` attribute enables depth comparison for depth textures. When set, texture lookup functions in GLSL return a depth comparison result instead of the raw depth value. Various comparison operators and modes like 'never' and 'always' are supported.
+
+--------------------------------
+
+### Context.copy_framebuffer()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `copy_framebuffer()` method is used for blitting framebuffers, copying framebuffer content into a texture, downsampling framebuffers, or downsampling a framebuffer directly to a texture. It requires a destination (Framebuffer or Texture) and a source Framebuffer.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/buffer.md
+
+A Buffer is a dedicated area of GPU memory that can store any data in bytes. Creating a buffer involves allocating memory, which might contain fragments of deleted objects if the buffer is initially empty. The `reserve` parameter specifies the number of bytes to allocate, with a minimum of 1.
+
+--------------------------------
+
+### moderngl > Context.vertex_array()
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.vertex_array()` method binds `Buffer` objects to a `Program`'s input attributes using buffer format strings. The resulting `VertexArray` is used for rendering via `render()` or transform feedback via `transform().` It supports interleaved buffers, separate buffers, and indexed rendering.
+
+--------------------------------
+
+### Program > Attributes > Program.geometry_output
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The geometry_output attribute defines the geometry output primitive type, which can be POINTS, LINE_STRIP, or TRIANGLE_STRIP, if a GeometryShader is present.
+
+--------------------------------
+
+### Context Flags > Context.RASTERIZER_DISCARD
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.RASTERIZER_DISCARD enables or disables rasterization.
+
+--------------------------------
+
+### Context > Sampler
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Samplers bind Textures to uniform samplers within a Program object. Binding a Sampler object also binds the texture object attached to it. The `Context.sampler` method creates a new Sampler object with various parameters controlling texture repetition, filtering, anisotropy, comparison functions, border color, and LOD.
+
+--------------------------------
+
+### Context.disable_direct()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `disable_direct()` method provides direct access to `glDisable`, allowing the disabling of unsupported capabilities in ModernGL. It should not be used for capabilities already supported by ModernGL.
+
+--------------------------------
+
+### Framebuffer > Attributes > Framebuffer.color_mask
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `color_mask` attribute controls which color components (RGBA) are affected by fragment write operations, including rendering and clearing. The default is `(True, True, True, True)`, allowing writes to all components.
+
+--------------------------------
+
+### Shader Basics
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_basics.md
+
+GLSL supports standard C-style data types such as bool, int, uint, float, and double, each with 2, 3, and 4-component vector versions (e.g., vec2, vec3, vec4). It also includes a wide range of built-in mathematical and vector functions.
+
+--------------------------------
+
+### Buffer Formats
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/buffer_format.md
+
+Interleaved buffer values are represented by multiple space-separated count-type-size triples. For instance, '2f 3u x /v' describes two floats for a vec2 attribute, followed by three unsigned bytes for a uvec3 attribute, and a single byte of padding. The '/v' indicates vertex usage, which is the default.
+
+--------------------------------
+
+### Sampler > Attributes
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+Anisotropy filtering is controlled by the `anisotropy` attribute, which specifies the number of samples for anisotropic filtering. Values greater than 1.0 enable this feature, with the value clamped between 1.0 and the context's maximum anisotropy.
+
+--------------------------------
+
+### Context.line_width
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The default line width can be set using `Context.line_width`. However, line widths other than 1.0 are not guaranteed to be consistent across different OpenGL implementations. For rendering wide lines, it is recommended to use geometry shaders.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/buffer.md
+
+Buffer objects are OpenGL objects that store an array of unformatted memory allocated by the OpenGL context, essentially data allocated on the GPU. They are used to store vertex data, pixel data retrieved from images or the framebuffer, and various other types of information. Buffer objects cannot be instantiated directly and require a context; creation is done using `Context.buffer()`. Content can be copied using `Context.copy_buffer()`.
+
+--------------------------------
+
+### ModernGL Types
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/moderngl_types.md
+
+ModernGL utilizes several key types for graphics operations. A `Buffer` stores vertex data in graphics memory. A `Program` represents a shader program, configured with GLSL source code. A `VertexArray` facilitates communication between `Buffer` and `Program` for rendering calls and is immutable but cheap to create. Various `Texture` types exist, with `Texture` being the most common 2D texture. A `Framebuffer` serves as an offscreen render target, supporting attachments like textures and depth buffers.
+
+--------------------------------
+
+### Standalone rendering
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/rendering.md
+
+Standalone rendering in ModernGL enables rendering without the need for a window. Rendering is initiated when the `VertexArray.render()` method is invoked. The default rendering mode is `moderngl.TRIANGLES`, but this can be changed to other modes like `moderngl.LINES` or `moderngl.LINE_STRIP` as needed. To display the rendering output, the Pillow (PIL) library can be used to transfer the texture from GPU memory to RAM and then display it.
+
+--------------------------------
+
+### Texture Filters > Context.LINEAR
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINEAR texture filter returns the weighted average of the four texture elements closest to the specified texture coordinates. This can include wrapped or repeated texture elements.
+
+--------------------------------
+
+### External Objects
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+External objects are used for interoperability with other libraries. `Context.external_buffer` and `Context.external_texture` allow creating buffer and texture objects from existing OpenGL objects without copying data.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/buffer.md
+
+Buffers can be cleared by manually writing zeros to the allocated memory using the `buf.clear()` method. ModernGL supports two types of buffers: dynamic and non-dynamic. The `dynamic` keyword argument (defaulting to `False`) indicates how frequently the buffer will be accessed. Using `dynamic=True` is recommended for frequently used buffers.
+
+--------------------------------
+
+### Context Flags
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context flags are used to enable or disable states in the context. These are bit flags that can be combined using the bitwise OR operator to set multiple states simultaneously. Examples include enabling depth testing and face culling.
+
+--------------------------------
+
+### Context.renderbuffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.renderbuffer` method creates a new `Renderbuffer` object. Renderbuffers can be attached to framebuffers as render targets but cannot be sampled as textures. Parameters include size, number of components, samples for multisampling, and data type.
+
+--------------------------------
+
+### Context.depth_clamp_range
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.depth_clamp_range` property allows for uniform use of `GL_DEPTH_CLAMP` and `glDepthRange`. `GL_DEPTH_CLAMP` disables clipping of fragments outside the near limit of the projection matrix, enabling drawing within the Z (depth) coordinate range of 0 to 1 even if the projection matrix's near plane is set higher. `glDepthRange` maps depth values from normalized device coordinates to window coordinates.
+
+--------------------------------
+
+### VertexArray.render() / VertexArray.transform() — Draw and Transform Feedback
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `VertexArray.render()` method issues a draw call, optionally instanced. The `VertexArray.transform()` method captures output varyings into a buffer without any fragment processing. Both methods accept a `mode` argument to specify the drawing primitive type, such as `moderngl.TRIANGLES` or `moderngl.POINTS`.
+
+--------------------------------
+
+### TextureCube
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture_cube.md
+
+TextureCube objects cannot be instantiated directly; they require a context. Use Context.texture_cube() or Context.depth_texture_cube() to create them.
+
+--------------------------------
+
+### Blend Functions
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Blend functions control blending operations. The default is ctx.SRC_ALPHA, ctx.ONE_MINUS_SRC_ALPHA.
+
+--------------------------------
+
+### Program > Attributes > Program.geometry_vertices
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The geometry_vertices attribute indicates the maximum number of vertices that a geometry shader can output, as defined in the layout specification.
+
+--------------------------------
+
+### Texture3D
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture3d.md
+
+A Texture3D object is an OpenGL object that holds one or more images with the same image format. Textures can be used as a source for texture access in Shaders or as render targets. Texture3D objects cannot be instantiated directly and require a context, which can be obtained using Context.texture3d().
+
+--------------------------------
+
+### Texture Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+Texture formats in ModernGL are defined by the `dtype` parameter during texture creation, such as with `moderngl.Context.texture()`. The default `dtype` is `f1`, where each component is an unsigned byte (0-255) normalized to a 0.0-1.0 range when read in a shader. These formats are based on the string formats used in NumPy.
+
+--------------------------------
+
+### TextureArray
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture_array.md
+
+A TextureArray is a Texture where each mipmap level contains an array of images of the same size. Array textures may have Mipmaps, but each mipmap in the texture has the same number of levels. A TextureArray object cannot be instantiated directly; it requires a context. Use Context.texture_array() to create one.
+
+--------------------------------
+
+### TextureCube
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture_cube.md
+
+TextureCube represents cubemaps, which are textures using the GL_TEXTURE_CUBE_MAP type. Each mipmap level contains 6 faces of the same size. The width and height of a cubemap must be equal, forming a square, but their dimensions do not need to be powers of two.
+
+--------------------------------
+
+### moderngl > moderngl.get_context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/moderngl.md
+
+The `moderngl.get_context()` function returns the previously created context object. This is useful when you need to access the existing context from a different module or part of your application.
+
+--------------------------------
+
+### Uniform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/uniform.md
+
+A uniform is a global GLSL variable declared with the ‘uniform’ storage qualifier. These act as parameters that the user of a shader program can pass to that program. In ModernGL, Uniforms can be accessed using Program.__getitem__() or Program.__iter__().
+
+--------------------------------
+
+### Context Flags > Context.CULL_FACE
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.CULL_FACE enables or disables face culling.
+
+--------------------------------
+
+### Context.TRIANGLE_STRIP
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.TRIANGLE_STRIP renders triangles using adjacent vertices. Each group of three adjacent vertices forms a triangle. A vertex stream of n length generates n-2 triangles, with the face direction determined by the first triangle.
+
+--------------------------------
+
+### Texture > Methods > Texture.read
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The `Texture.read()` method reads pixel data into system memory as bytes, with an optional `alignment` parameter for byte alignment. The `Texture.read_into()` method reads texture content directly into a bytearray or a moderngl `Buffer`, which can be more efficient as it avoids transferring data to system memory.
+
+--------------------------------
+
+### The Lifecycle of a ModernGL Object
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/gc.md
+
+ModernGL supports three garbage collection modes, configurable via `Context.gc_mode` after context creation. The modes are `None` (default, manual release required), `context_gc` (dead objects collected in `Context.objects` and released via `Context.gc()`), and `auto` (automatic destruction of dead objects). Garbage collection in ModernGL pertains to underlying OpenGL objects, not Python objects themselves, and its behavior can be influenced by the environment and threading.
+
+--------------------------------
+
+### Blend Functions > Context.ONE_MINUS_SRC_COLOR
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.ONE_MINUS_SRC_COLOR blend function uses (1,1,1,1) minus the source color components (Rs0/kR,Gs0/kG,Bs0/kB,As0/kA).
+
+--------------------------------
+
+### Using GLSL in ModernGL > Shader Types
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+Shader types include Vertex Shader (processes vertex attributes for transformations), Fragment Shader (calculates pixel colors), Geometry Shader (processes primitives), Tessellation Shaders (control geometry smoothing), and Compute Shader (for general-purpose GPU computing).
+
+--------------------------------
+
+### One familiar triangle
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/one_familiar_triangle.md
+
+When working with shaders, it's generally recommended to avoid branching logic like 'if-else' statements. Instead, favor mathematical formulas and operations that can be efficiently parallelized on the GPU for better performance.
+
+--------------------------------
+
+### Vertex Shader (transforms)
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_transform.md
+
+Transforms, also known as transform feedback, allow capturing the output of a shader into a buffer instead of drawing to the screen. The simplest form involves a vertex shader with no input data, utilizing the built-in `gl_VertexID` variable to represent the current vertex being processed. Input variables in vertex shaders are called attributes, and output values are called varyings.
+
+--------------------------------
+
+### ModernGL Types
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/moderngl_types.md
+
+All ModernGL objects, such as `Buffer`, `Program`, `VertexArray`, `Texture` variants, and `Framebuffer`, must be created from a `Context` object using specific methods like `Context.buffer()`, `Context.program()`, etc.
+
+--------------------------------
+
+### Context.gc() → int
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `gc()` method deletes OpenGL objects and returns the number of objects deleted. This method is essential for garbage collecting OpenGL resources when `gc_mode` is set to `'context_gc'`. Calling it with other `gc_mode` configurations has no effect.
+
+--------------------------------
+
+### moderngl > Context.texture()
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.texture()` method creates 2D GPU textures from various data sources like Pillow images, NumPy arrays, or raw bytes. It supports different data types including floats for HDR, integers, and depth textures. It can also create 3D textures, texture arrays, and cubemaps.
+
+--------------------------------
+
+### Context.TRIANGLE_FAN
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.TRIANGLE_FAN renders triangles by fixing the first vertex and using subsequent pairs of adjacent vertices. Triangles are formed as (0, 1, 2), (0, 2, 3), and so on. A vertex stream of n length generates n-2 triangles.
+
+--------------------------------
+
+### Framebuffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+A Framebuffer is a collection of buffers that can be used as the destination for rendering. The buffers for Framebuffer objects reference images from either Textures or Renderbuffers.
+
+--------------------------------
+
+### Framebuffer > Attributes > Framebuffer.depth_mask
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/framebuffer.md
+
+The `depth_mask` attribute enables or disables write operations to the depth buffer. This affects both rendering and clearing operations. Even with depth testing enabled, disabling the depth mask prevents updates to the depth buffer.
+
+--------------------------------
+
+### Sampler
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/sampler.md
+
+A Sampler Object stores sampling parameters for texture access within a shader. When a sampler is bound to a texture image unit, its sampling parameters override those of any texture bound to the same unit. Sampler state can be modified at any time without being bound. Samplers are bound to texture units, not textures directly, and care must be taken to avoid texture incompleteness issues. Sampler bindings are cleared automatically each frame, requiring at least one bind/use per texture unit per frame.
+
+--------------------------------
+
+### Using GLSL in ModernGL > Uniforms
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+Uniforms are global variables in shaders, constant for a single draw call, used to pass application data like transformation matrices or material properties to the shader.
+
+--------------------------------
+
+### Texture Format
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+When writing data to textures, the data type should match the internal format. For example, `f1` textures accept unsigned bytes (`u1` or `numpy.uint8`), while `f2` textures accept 16-bit floats (`f2` or `numpy.float16`).
+
+--------------------------------
+
+### Texture Formats > Signed
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+Signed integer textures store signed byte values (i1), 16-bit signed integers (i2), or 32-bit signed integers (i4). In shaders, sampler types like isampler2D should be used for these textures.
+
+--------------------------------
+
+### Context Flags > Context.PROGRAM_POINT_SIZE
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The PROGRAM_POINT_SIZE context flag enables gl_PointSize in vertex or geometry shaders, allowing individual point sizes to be specified. If not set, behavior is undefined.
+
+--------------------------------
+
+### Context.gc_mode — Object Lifecycle and Garbage Collection
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.gc_mode` setting configures how OpenGL resources are garbage-collected. `None` requires manual `release()` calls. `'context_gc'` collects dead objects and batches their freeing with `ctx.gc()`. `'auto'` relies on Python's garbage collector to drive deletion.
+
+--------------------------------
+
+### Context.point_size
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `Context.point_size` property controls the pixel size of rendered points. The minimum and maximum values are limited by `POINT_SIZE_RANGE`, which typically ranges from (1, 100) but can vary depending on the drivers and vendors. For variable point sizes, `PROGRAM_POINT_SIZE` can be enabled, allowing `gl_PointSize` to be written in the vertex or geometry shader.
+
+--------------------------------
+
+### `Context.buffer()` — Allocate a GPU Buffer
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+The `Context.buffer()` method allocates an OpenGL buffer object on the GPU. It accepts data from objects supporting the buffer protocol (like bytes or NumPy arrays) or can reserve empty space. Buffers are used for vertex data, index data, uniform blocks, and general storage. Data can be read from, written to, and copied between buffers.
+
+--------------------------------
+
+### Uniform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/uniform.md
+
+Uniforms allow you to replace constants in shaders with variables, enabling dynamic changes during rendering. They can be initialized in the shader and their values can be easily modified in ModernGL. For example, a float uniform `var1` can be set using `vao.program['var1'] = 140.02`. For vector types like `vec4`, values can be provided as a comma-separated list or a list/tuple of numbers, ensuring the correct number of values for the type (e.g., `vec4` takes 4 numbers).
+
+--------------------------------
+
+### Summary
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+ModernGL is suitable for scientific visualization, real-time simulation rendering, game development, image processing, and headless GPU computing. It integrates with existing OpenGL contexts from libraries like pygame, GLFW, Qt, or moderngl-window, or can create a standalone context for server-side rendering. NumPy arrays and Pillow images are easily passed to buffers and textures, respectively, enabling off-screen rendering workflows. For compute-intensive tasks, ComputeShader supports GPGPU execution with storage buffer and image load/store capabilities.
+
+--------------------------------
+
+### The Lifecycle of a ModernGL Object > Context Detection
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/gc.md
+
+When detecting an existing context from a window library, using `auto` garbage collection can be dangerous and lead to crashes, especially during application exit. This is because the window and context might be destroyed before ModernGL attempts to release its resources. The `context_gc` mode is recommended to avoid these issues.
+
+--------------------------------
+
+### Shader Basics
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_basics.md
+
+Shaders are small programs that run on the GPU (Graphics Processing Unit) using GLSL (OpenGL Shading Language), a C-style language. They were originally developed for shading 3D scenes, starting with per-vertex lighting and evolving to per-pixel lighting with fragment shaders, and are now used in many other areas.
+
+--------------------------------
+
+### Texture Format > Float Textures
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+`f2` textures store 16-bit float values using `GL_HALF_FLOAT` for the internal format.
+
+--------------------------------
+
+### Context.front_face
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The front_face property determines which triangle orientation is considered 'front-facing' for culling purposes. Acceptable values are 'ccw' (counter-clockwise, default) or 'cw' (clockwise). Face culling must be enabled for this setting to take effect.
+
+--------------------------------
+
+### Uniform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/uniform.md
+
+Uniform values can be read directly using the `.value` attribute, for example, `scale = vao.program['scale'].value`. Uniforms also support direct byte read and write operations using `.read()` and `.write()` methods, which can potentially speed up code. However, ModernGL handles byte conversion efficiently, so manual conversion is often unnecessary.
+
+--------------------------------
+
+### ModernGL > Features
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+ModernGL provides GPU accelerated high-quality graphics and allows rendering modern OpenGL scenes with less complexity. It is designed to be simpler and faster than PyOpenGL and can render graphics without requiring a window. The library is 100% Pythonic.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/buffer.md
+
+Buffers can be bound to uniform blocks or shader storage buffers using `bind_to_uniform_block()` and `bind_to_storage_buffer()`, respectively. These methods allow specifying a binding point, offset, and size for the buffer's data.
+
+--------------------------------
+
+### Texture Filters > Context.LINEAR_MIPMAP_NEAREST
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINEAR_MIPMAP_NEAREST selects the mipmap that best matches the pixel size and uses the LINEAR criterion (weighted average of four closest elements) to determine the texture value.
+
+--------------------------------
+
+### Texture Format > Float Textures
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+`f4` textures store 32-bit float values using `GL_FLOAT`. Some drivers may have alignment issues with 3-component formats.
+
+--------------------------------
+
+### Installation > From PyPI (pip) > NOTE
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/installation.md
+
+If you encounter issues with ModernGL, they are likely related to context creation. Additional configuration may be necessary in certain scenarios, particularly on Linux systems running without an X server. Refer to the context section for more details.
+
+--------------------------------
+
+### moderngl > moderngl.create_context
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/moderngl.md
+
+The `moderngl.create_context()` function can be used to create a ModernGL context. It accepts an optional `require` parameter to specify the minimum OpenGL version required (e.g., 430 for OpenGL 4.3) and a `standalone` boolean flag to create a headless context without a window. Context sharing is known to not work properly and should be avoided.
+
+--------------------------------
+
+### Context.memory_barrier()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `memory_barrier()` method applies a memory barrier, which is crucial for correctly changing buffers or textures between shaders to prevent issues like 'depth fighting'. It should be used between shader programs or compute shaders. It accepts optional `barriers` and `by_region` arguments.
+
+--------------------------------
+
+### Texture > Methods > Texture.bind_to_image
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The `Texture.bind_to_image()` method, requiring OpenGL 4.2, binds a texture to an image unit for use in shaders with image load/store operations. It allows specifying read-only, write-only, or read-write access. The `format` parameter can override the texture's internal format for shader operations.
+
+--------------------------------
+
+### Uniform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/triangles_draw/uniform.md
+
+Uniforms can be used to control various aspects of rendering, such as changing the screen aspect ratio, viewing angle, or projection type. For instance, a `scale` uniform can be added to the vertex shader and multiplied by vertices to control the size of rendered objects like triangles. Setting `vao.program['scale'] = 2.0` enlarges the triangle, while `vao.program['scale'] = 0.5` reduces it.
+
+--------------------------------
+
+### StorageBlock
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/storage_block.md
+
+Storage Blocks are data blocks accessible from OpenGL 4.3+ Programs. They can be larger than Uniform Blocks and also support write operations. For read-only data under 64KB, Uniform Blocks are recommended.
+
+--------------------------------
+
+### ComputeShader
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/compute_shader.md
+
+A Compute Shader is a Shader Stage used for computing arbitrary information, often for tasks not directly related to rendering. It supports uniforms, storage buffers, uniform buffers, and images, similar to regular Shader Programs.
+
+--------------------------------
+
+### VertexArray
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/vertex_array.md
+
+A VertexArray object is an OpenGL object that stores all of the state needed to supply vertex data. It stores the format of the vertex data as well as the Buffer objects providing the vertex data arrays. In ModernGL, the VertexArray object also stores a reference for a Program object.
+
+--------------------------------
+
+### Context.compute_shader
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+A `ComputeShader` is a shader stage primarily used for arbitrary computations rather than direct rendering. It can be created using the `Context.compute_shader` method, which takes the shader source code as input.
+
+--------------------------------
+
+### Texture Formats
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+Signed integer textures store values as signed integers. 'ni1' textures use 8-bit signed integers (GL_BYTE) where the range [0, 127] is normalized to [0.0, 1.0], and negative values are clamped. 'ni2' textures use 16-bit signed integers (GL_SHORT) where the range [0, 2^15-1] is normalized to [0.0, 1.0], with negative values also clamped.
+
+--------------------------------
+
+### Texture Format > Float Textures
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+`f1` textures use unsigned bytes (8 bits per component) and are the default. In shaders, these are treated as normalized values, mapping the byte range 0-255 to the float range 0.0-1.0. The corresponding sampler types in shaders are `sampler2D`, `sampler2DArray`, `sampler3D`, `samplerCube`, etc.
+
+--------------------------------
+
+### Program > Attributes > Program.is_transform
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+The is_transform attribute is a boolean flag indicating if the program is a transform program, meaning it does not have a fragment shader.
+
+--------------------------------
+
+### Texture Filters > Context.LINEAR_MIPMAP_LINEAR
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.LINEAR_MIPMAP_LINEAR selects the two closest mipmaps to the pixel size and uses the LINEAR criterion on each. The final texture value is a weighted average of these two values.
+
+--------------------------------
+
+### Texture Filters > Context.NEAREST_MIPMAP_LINEAR
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.NEAREST_MIPMAP_LINEAR selects the two closest mipmaps to the pixel size and uses the NEAREST criterion on each. The final texture value is a weighted average of these two values.
+
+--------------------------------
+
+### Context.detect_framebuffer()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `detect_framebuffer()` method is used to detect a framebuffer, which is typically done during context creation. It might be necessary if the default framebuffer changes during the application's lifetime. It requires the OpenGL framebuffer object (glo) as an argument.
+
+--------------------------------
+
+### Texture Filters > Context.NEAREST
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.NEAREST texture filter returns the value of the texture element nearest to the specified texture coordinates based on Manhattan distance.
+
+--------------------------------
+
+### ModernGL
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+ModernGL is a Python wrapper for OpenGL Core (3.3+) that simplifies GPU-accelerated graphics programming. It offers a Pythonic interface, reducing boilerplate code and improving performance by minimizing Python-OpenGL round-trips. ModernGL supports headless rendering, integrates with various Python window libraries, and works with NumPy and Pillow.
+
+--------------------------------
+
+### Texture > Methods > Texture.build_mipmaps
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The `Texture.build_mipmaps()` method generates mipmaps for the texture. This operation also modifies the texture filter to `LINEAR_MIPMAP_LINEAR, LINEAR`. Parameters `base` and `max_level` control the range of mipmap levels to generate.
+
+--------------------------------
+
+### Renderbuffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/renderbuffer.md
+
+Renderbuffer objects are OpenGL objects that contain images and are created and used specifically with Framebuffer objects. They are optimized for use as render targets, making them the logical choice when you do not need to sample from the produced image. Renderbuffers also natively accommodate multisampling. They cannot be instantiated directly and require a context, created using Context.renderbuffer() or Context.depth_renderbuffer().
+
+--------------------------------
+
+### Context Creation > Require a minimum OpenGL version
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/context.md
+
+ModernGL requires OpenGL 3.3 or higher. By default, version 3.3 is the minimum required. You can specify a higher minimum version using the 'require' parameter, for example, 'moderngl.create_context(require=430)' to enforce OpenGL 4.3. If the created context's version is lower than required, creation will fail. The actual context version can be accessed via 'Context.version_code'.
+
+--------------------------------
+
+### Texture Filters > Context.NEAREST_MIPMAP_NEAREST
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Context.NEAREST_MIPMAP_NEAREST selects the mipmap that best matches the pixel size and uses the NEAREST criterion to determine the texture value.
+
+--------------------------------
+
+### Headless on Ubuntu 18 Server > Dependencies
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/techniques/headless_ubuntu_18_server.md
+
+To achieve headless rendering on Ubuntu 18 Server, you need to install specific packages. These include python3-pip for package management, mesa-utils for diagnostic tools like glxinfo, and xvfb for creating a virtual display. The libegl1-mesa package is optional if you plan to use EGL instead of X11.
+
+--------------------------------
+
+### Texture Format > Integer Textures
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+Integer textures allow shaders to read raw integer values using `usampler*` for unsigned or `isampler*` for signed. These textures do not support `LINEAR` filtering, only `NEAREST` filtering.
+
+--------------------------------
+
+### Texture Formats > Unsigned
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+Unsigned integer textures store unsigned byte values (u1), 16-bit unsigned integers (u2), or 32-bit unsigned integers (u4). The appropriate sampler type in shaders should be used, such as usampler2D for u1 textures.
+
+--------------------------------
+
+### ComputeShader > Methods > run
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/compute_shader.md
+
+Compute shaders can be executed directly by specifying workgroup sizes for x, y, and z dimensions using the `run()` method. Alternatively, they can be run indirectly using a Buffer object that contains the workgroup size information.
+
+--------------------------------
+
+### Attributes > Texture.swizzle
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/texture.md
+
+The swizzle mask is a 4-character string where each character can represent 'R' (GL_RED), 'G' (GL_GREEN), 'B' (GL_BLUE), 'A' (GL_ALPHA), '0' (GL_ZERO), or '1' (GL_ONE). This allows for manipulation of texture component values in shaders, such as always returning 1.0 for the alpha channel or masking other components to 0.0.
+
+--------------------------------
+
+### Notes
+
+Source: https://github.com/moderngl/moderngl/blob/main/README.md
+
+ModernGL may offer performance advantages over other OpenGL access libraries due to its C++ implementation, consolidating multiple OpenGL calls into single Python calls. It requires OpenGL 3.3, with Compute Shaders needing OpenGL 4.3. Some features depend on specific extensions.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/buffer.md
+
+Data can be read from GPU memory back into RAM using the `Buffer.read()` function. However, transferring data between RAM and GPU memory is performance-intensive and should be minimized. For copying data between buffers, the `Context.copy_buffer()` function is more efficient.
+
+--------------------------------
+
+### Context.polygon_offset
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Polygon offset is used to prevent visual artifacts like z-fighting or fading when drawing overlapping geometry. It works by adding an offset to the depth value of each fragment before the depth test. The offset is calculated based on `unit` and `factor` values, where `unit` is for geometry parallel to the near/far plane and `factor` handles sloped geometry. Setting both to 0 disables polygon offset.
+
+--------------------------------
+
+### Vertex Shader (transforms)
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_transform.md
+
+To execute a shader program, a vertex array is always required. Even if the shader has no buffer inputs, an empty vertex array can be provided. The `transform` method on a vertex array can be used to direct shader output to a buffer, specifying the number of vertices to process.
+
+--------------------------------
+
+### Texture Formats > Normalized Integer Textures
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/texture_formats.md
+
+Normalized integer textures treat integer texel values as normalized floating-point numbers in shaders, typically in the range [0.0, 1.0]. Unsigned normalized textures (nu1, nu2) use GL_UNSIGNED_BYTE and GL_UNSIGNED_SHORT respectively, mapping their full integer range to [0.0, 1.0]. There is no standard for 32-bit normalized integer textures due to precision limitations.
+
+--------------------------------
+
+### Context.clear_samplers()
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+The `clear_samplers()` method unbinds samplers from texture units. While sampler bindings clear automatically between frames, this method offers a way to ensure texture units are clear, preventing potential bugs. It accepts `start` and `stop` parameters to define the range of texture units to clear.
+
+--------------------------------
+
+### Polygon offset (avoid z-fighting when drawing wireframe over solid)
+
+Source: https://context7.com/moderngl/moderngl/llms.txt
+
+Polygon offset can be used to push geometry away from the camera, which is useful for avoiding z-fighting when drawing wireframes over solid objects. Set `ctx.polygon_offset` to `1.0, 1.0` to enable it, and `0.0, 0.0` to disable it. Wireframe mode for debugging can be enabled by setting `ctx.wireframe` to `True`.
+
+--------------------------------
+
+### Program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/program.md
+
+Screen coordinates in ModernGL range from -1 to 1 for both x and y axes, with the point (-1, -1) representing the lower-left corner of the screen. A sample program can pass input vertex coordinates directly to these screen coordinates.
+
+--------------------------------
+
+### The Lifecycle of a ModernGL Object > Manually Releasing Objects
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/gc.md
+
+When `gc_mode` is set to `None`, objects in ModernGL do not automatically release their OpenGL resources. Each object type has a `release()` method that must be explicitly called to clean up all associated OpenGL resources.
+
+--------------------------------
+
+### The Lifecycle of a ModernGL Object > Detecting Released Objects
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/gc.md
+
+To detect if a ModernGL resource has been released, you can check the type of its internal object via the `.mglo` property. After calling `release()`, the type will change to `_moderngl.InvalidObject`.
+
+--------------------------------
+
+### Buffer
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/first_rendering/buffer.md
+
+The size of a buffer can be changed at any time using the `Buffer.orphan(size=...)` function. After resizing, data can be written to the buffer using `Buffer.write(data)`, which transfers data from RAM to GPU memory. If the buffer size changes after being added to a VertexArray, the new number of vertices must be specified in the `vertices` parameter of `VertexArray.render()` or `VertexArray.transform()`.
+
+--------------------------------
+
+### Other Enums
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/context.md
+
+Barrier bits are used to control memory synchronization in ModernGL. These include bits for vertex attribute arrays, element arrays, uniforms, texture fetches, shader image access, command buffers, pixel buffers, texture updates, buffer updates, framebuffers, transform feedback, atomic counters, shader storage, and a bit for all barrier types.
+
+--------------------------------
+
+### Using ModernGL in CI > macOS
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/using-moderngl-in-ci.md
+
+No special configuration is required to run ModernGL on macOS CI environments.
+
+--------------------------------
+
+### Vertex Shader (transforms)
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_transform.md
+
+Reading data back from a buffer into system memory after a transform operation causes a synchronization, where the CPU program stalls until the GPU shader processing is complete. While this is sometimes necessary, it is generally slow and avoided in performance-critical applications.
+
+--------------------------------
+
+### Install
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/index.md
+
+ModernGL can be installed from PyPI using pip. Additional setup instructions are available for development environments, using ModernGL with Mesa 3D on Windows, and for using ModernGL in Continuous Integration (CI) pipelines.
+
+--------------------------------
+
+### Program
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/reference/program.md
+
+Uniform buffers can be bound using Buffer.bind_to_uniform_block() or set individually. For more complex binding yielding higher performance, consider using moderngl.Scope.
+
+--------------------------------
+
+### Shader Basics
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_basics.md
+
+Shaders execute in parallel across numerous GPU cores, enabling them to perform a vast amount of work in microseconds. Shader executions are asynchronous, running in the background while the Python code continues, though certain operations may cause synchronization.
+
+--------------------------------
+
+### Installation > Using with Mesa 3D on Windows
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/installation.md
+
+For older graphics cards that cause errors with ModernGL on Windows, using Mesa 3D is a potential solution. This can be achieved by either compiling Mesa yourself or by using MSYS2 to install pre-compiled Mesa binaries.
+
+--------------------------------
+
+### ModernGL Types
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/moderngl_types.md
+
+ModernGL types cannot be subclassed due to performance considerations. Extension of functionality should be achieved through substitution. Many objects provide an `extra` property that can hold any Python object for this purpose.
+
+--------------------------------
+
+### Installation > From PyPI (pip)
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/installation.md
+
+ModernGL can be installed from PyPI using pip for Windows, OS X, and Linux. Pre-built wheels are available, simplifying the installation process for standard use. For development environments, additional setup steps are required.
+
+--------------------------------
+
+### Vertex Shader (transforms)
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/the_guide/getting_started/low_start/shader_transform.md
+
+A known bug in some OpenGL drivers affects the `mod(number, divisor)` function. When the first argument is exactly twice the second, the function may return the divisor value instead of 0. To circumvent this, a custom `mod2` function can be implemented and used instead of the standard `mod` function.
+
+--------------------------------
+
+### The Lifecycle of a ModernGL Object > The Threading Issue
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/topics/gc.md
+
+When using threads in Python applications, the garbage collector can run in any thread, which conflicts with OpenGL's requirement that only the main thread interacts with the context. In such scenarios, use the `context_gc` mode and periodically call `Context.gc()`, for instance, during every frame swap.
+
+--------------------------------
+
+### Installation > Using with Mesa 3D on Windows > Using MSYS2 > 32-bit python
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/installation.md
+
+To use Mesa 3D with MSYS2 on Windows for 32-bit Python, open `C:\msys64\mingw32.exe` and install mesa using `pacman -S mingw-w64-i686-mesa`. Add `C:\msys64\mingw32\bin` to your PATH and set the environment variable `GLCONTEXT_WIN_LIBGL` to `C:\msys64\mingw32\bin\opengl32.dll`.
+
+--------------------------------
+
+### Installation > Using with Mesa 3D on Windows > Using MSYS2 > 64-bit python
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/installation.md
+
+To use Mesa 3D with MSYS2 on Windows for 64-bit Python, open `C:\msys64\mingw64.exe` and install mesa using `pacman -S mingw-w64-x86_64-mesa`. Add `C:\msys64\mingw64\bin` to your PATH and set the environment variable `GLCONTEXT_WIN_LIBGL` to `C:\msys64\mingw64\bin\opengl32.dll`.
+
+--------------------------------
+
+### Using ModernGL in CI > Windows CI Configuration
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/using-moderngl-in-ci.md
+
+To run ModernGL on Windows CI, you must install Mesa from the MSYS2 project and add it to your PATH. This involves installing Mesa via pacman, adding the relevant bin directory to the PATH environment variable, and setting the GLCONTEXT_WIN_LIBGL environment variable to point to opengl32.dll. It's also important to remove any conflicting python.exe from the MSYS2 installation.
+
+--------------------------------
+
+### Using ModernGL in CI > Linux
+
+Source: https://github.com/moderngl/moderngl/blob/main/docs/install/using-moderngl-in-ci.md
+
+For running ModernGL on Linux CI, you need to configure xvfb to start a virtual framebuffer in the background. This allows ModernGL to function without a physical display. The process involves installing xvfb and then starting it with specific parameters.

@@ -1,0 +1,118 @@
+# docs/benchmarks/queries.yaml
+#
+# The labeled query set for benchmarking search().
+#
+# Schema per entry:
+#   query:        the search string to run through search_docs
+#   expected_title: the exact `sections.title` value of the ONE correct
+#                  answer for this query, as it exists in your real,
+#                  ingested database. Look this up by running:
+#                    sqlite3 moderngl_docs.db "SELECT id, title FROM sections ORDER BY title;"
+#                  and choosing, by hand, which section a human would
+#                  consider "the right answer" for the query.
+#   category:     a short tag for grouping in the report (e.g. "symbol",
+#                  "concept", "code_example", "troubleshooting"). Use
+#                  whatever categories make sense for YOUR corpus -- the
+#                  ones below are suggestions, not a fixed taxonomy.
+#   note:         (optional) why this query is interesting/tricky --
+#                  this becomes the seed of your qualitative writeup later.
+
+- query: "Context.memory_barrier()"
+  expected_title: "Context.memory_barrier()"
+  category: "symbol"
+  note: "Exact API call. FTS should find this instantly based on the method name."
+
+- query: "Texture.build_mipmaps"
+  expected_title: "Texture > Methods > Texture.build_mipmaps"
+  category: "symbol"
+  note: "Exact API name lookup. Should be an easy win for FTS."
+
+- query: "how do I prevent z-fighting when drawing a wireframe"
+  expected_title: "Polygon offset (avoid z-fighting when drawing wireframe over solid)"
+  category: "concept"
+  note: "Good test for semantic overlap. Contains 'z-fighting' and 'wireframe' which FTS will pick up, but phrased as a question."
+
+- query: "using threads with python and opengl context"
+  expected_title: "The Lifecycle of a ModernGL Object > The Threading Issue"
+  category: "concept_paraphrase"
+  note: >
+    Requires the search to understand the semantic link between 'threads' in the query 
+    and 'threading issue' / 'garbage collector can run in any thread' in the text.
+
+- query: "downsampling a framebuffer"
+  expected_title: "Context.copy_framebuffer()"
+  category: "concept_paraphrase"
+  note: >
+    The title has zero overlap with the query. FTS will struggle unless it parses the body 
+    which states 'copying framebuffer content into a texture, downsampling framebuffers'. Vector search should excel here.
+
+- query: "running code on the GPU for arbitrary calculations without rendering to the screen"
+  expected_title: "ComputeShader"
+  category: "concept_paraphrase"
+  note: >
+    Extremely paraphrased concept. Text states: 'used for computing arbitrary information, often for tasks not directly related to rendering'. Vector search should win.
+
+- query: "what format string is used for 32-bit floats"
+  expected_title: "Texture Format > Float Textures"
+  category: "concept"
+  note: "Tests the ability to extract specific string values from parameter documentation (f4 textures store 32-bit float values)."
+
+- query: "ModernGL crashes on exit when using auto gc with window library"
+  expected_title: "The Lifecycle of a ModernGL Object > Context Detection"
+  category: "troubleshooting"
+  note: >
+    Troubleshooting query. The text mentions 'auto garbage collection can be dangerous and lead to crashes', 
+    making this a great test for semantic search over FTS.
+
+- query: "Context.buffer()"
+  expected_title: "Context.buffer()"
+  category: "symbol"
+  note: "Direct exact-match API query. FTS and Vector search should both easily find this."
+
+- query: "z-fighting fix"
+  expected_title: "Context.polygon_offset"
+  category: "concept_paraphrase"
+  note: >
+    The query uses the colloquial term 'z-fighting fix', while the documentation 
+    title is 'Context.polygon_offset'. Semantic search should link the concept of 
+    z-fighting to polygon offsets better than simple keyword matching.
+
+- query: "how to do GPGPU and compute tasks"
+  expected_title: "General-Purpose GPU Computing with Context.compute_shader()"
+  category: "natural_language"
+  note: "Full-sentence question mapping a broad concept (GPGPU) to the compute_shader API."
+
+- query: "change buffer size after creating it"
+  expected_title: "Resize a Buffer"
+  category: "tricky_overlap"
+  note: >
+    Tricky because FTS might heavily weight the words 'buffer' and 'creating' and 
+    surface 'Create a Dynamic Buffer' or 'Create an Empty Buffer', whereas vector 
+    search should understand the user wants to 'resize/change' it.
+
+- query: "multiple render targets MRT"
+  expected_title: "Create Framebuffer with Multiple Color Attachments (MRT)"
+  category: "concept"
+  note: "Standard acronym (MRT) mixed with the concept name. Easy keyword match but essential to test."
+
+- query: "why are my samplers bleeding over to the next frame"
+  expected_title: "Context.clear_samplers()"
+  category: "troubleshooting"
+  note: >
+    Tests the semantic engine's ability to match the user's observed symptom ('bleeding over') 
+    to the underlying problem and solution mentioned in the docs ('lingering samplers can still 
+    be a source of weird bugs'). FTS will struggle here.
+
+- query: "prevent rendering to the alpha channel"
+  expected_title: "Control Framebuffer Color Mask"
+  category: "concept_paraphrase"
+  note: >
+    User describes the desired outcome ('prevent alpha channel'), but the technical 
+    solution is 'Color Mask'. Vector search should successfully bridge this gap.
+
+- query: "how to run tests in github actions without a monitor"
+  expected_title: "GitHub Actions Workflow for Linux CI"
+  category: "natural_language"
+  note: >
+    User is asking about headless testing ('without a monitor'). The doc covers setting 
+    up xvfb for CI. Tests semantic understanding of headless environments.

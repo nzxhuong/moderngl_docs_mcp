@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "moderngl-docs-mcp"
+version = "0.1.0"
+description = "Hybrid (FTS5 + vector) MCP search server for ModernGL documentation."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "sqlite-vec>=0.1.0",
+    "sentence-transformers>=3.0.0",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/moderngl_docs_mcp"]
+
+[project.scripts]
+moderngl-docs-mcp = "moderngl_docs_mcp.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
