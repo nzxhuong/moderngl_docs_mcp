@@ -14,8 +14,7 @@
 #                  "concept", "code_example", "troubleshooting"). Use
 #                  whatever categories make sense for YOUR corpus -- the
 #                  ones below are suggestions, not a fixed taxonomy.
-#   note:         (optional) why this query is interesting/tricky --
-#                  this becomes the seed of your qualitative writeup later.
+#   note:         (optional) why this query is interesting/tricky.
 
 - query: "Context.memory_barrier()"
   expected_title: "Context.memory_barrier()"

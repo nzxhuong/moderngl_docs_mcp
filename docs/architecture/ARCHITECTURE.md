@@ -83,9 +83,6 @@ and the empirical answer is more nuanced than "hybrid is strictly better."
 root cause was traced to a real, proven mechanism (see §4 below and
 `BENCHMARKS.md` Finding 3) — not a flaw in RRF as an algorithm, but a
 specific assumption violation in how this corpus's data interacts with it.
-This is documented here because an architecture doc that only states "we
-combined two signals for better recall" without the caveat would overclaim
-relative to what was actually measured.
 
 ### Decision: candidate width wider than the result limit
 
